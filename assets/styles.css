@@ -1,0 +1,627 @@
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            color: #212121;
+        }
+
+        :root {
+            --main-color: rgb(171, 109, 17);
+            --second-color: rgb(227, 227, 204);
+            --border-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
+            --border-shadow2: 5px 5px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        header {
+            background-color: beige;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 15px;
+        }
+
+        /* pc */
+        .div1,
+        .div2 {
+            display: none;
+        }
+
+        /* end pc */
+
+        .fa-bars {
+            color: white;
+            font-size: 30px;
+        }
+
+        .photo {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-right: 90px;
+        }
+
+        .photo>h2 {
+            background-color: white;
+            border-radius: 20px;
+            width: 200px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .photo>img {
+            overflow: hidden;
+            border-radius: 50%;
+            display: flex;
+        }
+
+        .social_icons {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 20px;
+            position: fixed;
+            right: 0;
+        }
+
+        .social_icons div {
+            border-radius: 15px 0px 0px 15px;
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+            color: var(--main-color);
+        }
+
+        .introduce {
+            background-color: beige;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 0px 10px 30px 10px;
+        }
+
+        .introduce h2 {
+            font-weight: 100
+        }
+
+        .introduce h1 {
+            font-weight: 800;
+        }
+
+        .introduce div {
+            height: 30px;
+            width: 150px;
+            background-color: var(--main-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            box-shadow: 3px 3px 20px;
+        }
+
+        .introduce a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .love {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .love h2 {
+            font-weight: 750;
+        }
+
+        .love>span span {
+            border-bottom: 4px solid var(--main-color);
+        }
+
+        .love a {
+            color: white;
+            background-color: var(--main-color);
+            width: 130px;
+            height: 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .work {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+            background-color: beige;
+        }
+
+        .work>div {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .work>div:last-child {
+            margin-top: 60px;
+        }
+
+        .work>div>div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: var(--second-color);
+            box-shadow: var(--border-shadow);
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .work>div>div>div {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .photo2>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .creative {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            gap: 20px;
+            position: relative;
+        }
+
+        .creative>span {
+            font-size: 30px;
+        }
+
+        .creative>span span {
+            border-bottom: solid var(--main-color) 5px;
+            border-radius: 3px;
+        }
+
+        .creative a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            width: 120px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: var(--main-color);
+            color: white;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            box-shadow: var(--border-shadow2);
+        }
+
+        .creative>div {
+            height: 50px;
+        }
+
+        .projects {
+            display: flex;
+            background-color: var(--second-color);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            height: 1000px;
+        }
+
+        .projects>div {
+            border: solid var(--main-color);
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .projects>div>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .projects h3 {
+            font-size: 50px;
+            font-weight: 400;
+        }
+
+        .projects h4 {
+            font-size: 30px;
+            font-weight: 100;
+        }
+
+        .white h3 {
+            color: white;
+        }
+
+        .white h4 {
+            color: white;
+        }
+
+        .projects>div:first-child>div {
+            background-color: var(--main-color);
+            width: inherit;
+            height: inherit;
+            border-radius: 50%;
+        }
+
+        .hire {
+            background-color: var(--second-color);
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 0px 10px 0px 10px;
+        }
+
+        .hire>div h2 {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .hire>div span {
+            border-bottom: solid var(--main-color) 4px;
+            border-radius: 3px;
+        }
+
+        .hire a {
+            border-radius: 50px;
+            width: 100px;
+            height: 40px;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--main-color);
+            color: white;
+        }
+
+        .work2 {
+            background-color: var(--second-color);
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 80px 10px 10px 10px;
+        }
+
+        .work2>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            gap: 30px;
+            font-size: 11px;
+            background-color: rgb(247, 247, 222);
+            border-radius: 10px;
+            box-shadow: var(--border-shadow);
+        }
+
+        .work2>div>div:first-child>img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 70px;
+            height: 70px;
+        }
+
+        .work2>div>div:last-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .client {
+            padding: 10px;
+            padding-top: 20px;
+            background-image: url(Portfolio/background.jpg);
+            background-size: contain;
+        }
+
+        .client>h2 {
+            font-weight: 700;
+            font-size: 30px;
+        }
+
+        .client>h2>span {
+            border-bottom: 4px solid var(--main-color);
+            border-radius: 3px;
+        }
+
+        .client>div {
+            display: flex;
+            background-color: aliceblue;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: var(--border-shadow);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .client>div>div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .client>div>div>div {
+            display: flex;
+            align-items: center;
+        }
+
+        .client>div>div>div>img {
+            width: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .question {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--second-color);
+            padding: 10px;
+        }
+
+        .question>h4 {
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .question>span {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .question>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 0px 20px 0px;
+        }
+
+        .question>div>a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            background-color: var(--main-color);
+            width: 120px;
+            height: 40px;
+            border-radius: 50px;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding-top: 10px;
+            /* border: solid; */
+        }
+
+        .nav>nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 0px 10px 0px 10px;
+            width: 100%;
+        }
+
+        .nav>nav>a {
+            font-size: 14px;
+            text-decoration: none;
+            color: #212121;
+        }
+
+        .nav>div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+        }
+
+        .nav>div>i {
+            color: var(--main-color);
+            padding: 10px 5px 20px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 10px;
+            background-color: var(--second-color);
+        }
+
+        @media (min-width:1024px) {
+
+            .photo {
+                display: none;
+            }
+
+            .photo>img,
+            .photo>h2 {
+                display: none;
+            }
+
+            .fa-bars {
+                display: none;
+
+            }
+
+            header {
+                color: #221221;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                background-color: #ECE9E0;
+                gap: 50px;
+                padding-top: 20px;
+            }
+
+            .div1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 850px;
+                border-radius: 50px;
+                background-color: white;
+                box-shadow: var(--border-shadow);
+                height: 50px;
+            }
+
+            .div1>h2 {
+                margin-right: 110px;
+            }
+
+            .div1>nav {
+                display: flex;
+                gap: 30px;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .div1>nav>a {
+                text-decoration: none;
+                color: #221221;
+            }
+
+            .div1>nav>a:last-child {
+                background-color: var(--main-color);
+                border-radius: 30px;
+                color: white;
+                width: 80px;
+                height: 30px;
+                text-align: center;
+                padding-top: 4px;
+            }
+
+            .div2 {
+                display: flex;
+                align-items: center;
+                gap: 45px;
+            }
+
+            .div3 {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 500px;
+            }
+
+            .div3>h4 {
+                color: gray;
+                font-weight: 400;
+            }
+
+            .div3>h2 {
+                font-size: 30px;
+            }
+
+            .div3>a {
+                text-decoration: none;
+                width: 150px;
+                border-radius: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 30px;
+                color: white;
+                background-color: var(--main-color);
+                margin-top: 40px;
+            }
+
+            .introduce {
+                display: none;
+            }
+
+            .loveWork {
+                display: flex;
+                padding: 0px 30px 0px 30px;
+            }
+
+            .loveWork>.work {
+                font-size: 12px;
+            }
+
+            .loveWork>.love {
+                padding-top: 100px;
+            }
+
+            .photoCreative {
+                display: flex;
+                gap: 20px;
+                padding: 40px 30px 10px 10px;
+            }
+
+            .photo2 {
+                display: flex;
+            }
+
+            .div10 {
+                padding-bottom: 150px;
+            }
+
+            .creative {
+                height: 700px;
+                padding-top: 100px;
+            }
+
+            .projects {
+                flex-direction: row;
+                height: 300px;
+            }
+
+            .projects>div {
+                width: 150px;
+                height: 150px;
+            }
+
+            .projects h3 {
+                font-size: 40px;
+            }
+
+            .projects h4 {
+                font-size: 20px;
+            }
+
+            .div13 {
+                display: flex;
+                background-color: var(--second-color);
+                margin-top: 70px;
+            }
+
+            .social_icons {
+                height: 400px;
+                justify-content: center;
+                position: fixed;
+                right: 0px;
+            }
+        }
