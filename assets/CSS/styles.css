@@ -296,7 +296,7 @@ header {
 .client {
   padding: 10px;
   padding-top: 20px;
-  background-image: url(/assets/Portfolio/background.jpg);
+  background-image: url(../Portfolio/background.jpg);
   background-size: contain;
 }
 
