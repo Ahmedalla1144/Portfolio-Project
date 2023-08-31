@@ -297,7 +297,9 @@ header {
   padding: 10px;
   padding-top: 20px;
   background-image: url(../Portfolio/background.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .client > h2 {
